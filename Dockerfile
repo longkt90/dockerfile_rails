@@ -8,7 +8,3 @@ FROM ruby:2.3.0
 RUN apt-get update && \
     apt-get install -qq -y build-essential nodejs yui-compressor --fix-missing --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
-
-ENV RAILS_VERSION 4.2.6
-
-RUN gem install rails --version "$RAILS_VERSION"
